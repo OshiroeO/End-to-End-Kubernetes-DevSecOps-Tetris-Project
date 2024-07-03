@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "ing-bucket-fordevsecops"
+    bucket         = "pp-seoul"
     region         = "ap-northeast-2"
     key            = "End-to-End-Kubernetes-DevSecOps-Tetris-Project/EKS-TF/terraform.tfstate"
-    dynamodb_table = "Ing-tables-fordevops"
+    dynamodb_table = "pp-seoul-db"
     encrypt        = true
   }
   required_version = ">=0.13.0"
